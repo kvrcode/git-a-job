@@ -1,0 +1,60 @@
+$font-reg: 400;
+$font-bold: 700;
+$border: 1px solid black;
+
+$dark-blue: #48466d;
+$blue: #3d84a8;
+$light-blue: #46cdcf;
+$green: #abedd8;
+$dark-green: #75A797;
+$white: #f4f4f4;
+
+*{
+    font-family: Jost, sans-serif;
+    background-color: $dark-blue;
+}
+
+html{
+    font-size: 62.5%;
+    font-weight: $font-reg;
+}
+
+body{
+    text-align: center;
+}
+
+#title{
+    font-size: 3rem;
+    color: $green;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+
+    &__field{
+        background-color: $green;
+
+        border: none;
+        border-radius: 5px 0 0 5px;
+
+        outline: none;
+
+        &::placeholder{
+            color: $dark-green;
+        }
+
+    }
+
+    &__button{
+        background-color: $dark-green;
+        color: $white;
+
+        border: none;
+        border-radius: 0 5px 5px 0;
+
+        outline: none;
+
+        padding: 0.5rem 1rem;
+    }
+}
